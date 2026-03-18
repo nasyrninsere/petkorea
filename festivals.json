@@ -4,7 +4,7 @@
     "period": "2026. 3. 21. ~ 3. 22. | 10:00~17:00",
     "location": "경기도 양평군",
     "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773121302210.jpg",
-    "detail_url": "https://www.mcst.go.krfestivalView.jsp?pSeq=13015&pRo=1",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=13015&pRo=1",
     "lat": 37.4138,
     "lng": 127.5183
   },
@@ -13,34 +13,34 @@
     "period": "2026. 3. 14. ~ 3. 22. | 09:00~18:00",
     "location": "전라남도 구례군",
     "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773121271466.jpg",
-    "detail_url": "https://www.mcst.go.krfestivalView.jsp?pSeq=12142&pRo=2",
-    "lat": 36.5,
-    "lng": 127.5
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12142&pRo=2",
+    "lat": 34.8679,
+    "lng": 126.991
   },
   {
     "title": "광양 매화축제",
     "period": "2026. 3. 13. ~ 3. 22. | 06:00~19:00",
     "location": "전라남도 광양시",
     "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773121203810.jpg",
-    "detail_url": "https://www.mcst.go.krfestivalView.jsp?pSeq=12136&pRo=3",
-    "lat": 36.5,
-    "lng": 127.5
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12136&pRo=3",
+    "lat": 34.8679,
+    "lng": 126.991
   },
   {
     "title": "고령 대가야축제",
     "period": "2026. 3. 27. ~ 3. 29. | 10:00~22:00",
     "location": "경상북도 고령군",
     "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1743138365631.jpg",
-    "detail_url": "https://www.mcst.go.krfestivalView.jsp?pSeq=13408&pRo=4",
-    "lat": 36.5,
-    "lng": 127.5
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=13408&pRo=4",
+    "lat": 36.576,
+    "lng": 128.5056
   },
   {
     "title": "새봄맞이 연수한마음 축제",
     "period": "2026. 3. 28. ~ 3. 29. | 13:00 ~ 21:00",
     "location": "인천시 연수구",
     "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773806406947.jpg",
-    "detail_url": "https://www.mcst.go.krfestivalView.jsp?pSeq=13407&pRo=5",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=13407&pRo=5",
     "lat": 37.4562,
     "lng": 126.7052
   },
@@ -49,43 +49,43 @@
     "period": "2026. 3. 28. ~ 3. 29. | 10:00 ~ 16:00",
     "location": "전라남도",
     "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773121511358.jpg",
-    "detail_url": "https://www.mcst.go.krfestivalView.jsp?pSeq=13056&pRo=6",
-    "lat": 36.5,
-    "lng": 127.5
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=13056&pRo=6",
+    "lat": 34.8679,
+    "lng": 126.991
   },
   {
     "title": "경주 대릉원돌담길 축제",
     "period": "2026. 3. 27. ~ 3. 29. | 13:00 ~ 22:00",
     "location": "경상북도 경주시",
     "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773121424444.jpg",
-    "detail_url": "https://www.mcst.go.krfestivalView.jsp?pSeq=13037&pRo=7",
-    "lat": 36.5,
-    "lng": 127.5
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=13037&pRo=7",
+    "lat": 36.576,
+    "lng": 128.5056
   },
   {
     "title": "논산딸기축제",
     "period": "2026. 3. 26. ~ 3. 29. | 10:00~20:00",
     "location": "충청남도 논산시",
     "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773121453345.jpg",
-    "detail_url": "https://www.mcst.go.krfestivalView.jsp?pSeq=12146&pRo=8",
-    "lat": 36.5,
-    "lng": 127.5
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12146&pRo=8",
+    "lat": 36.6588,
+    "lng": 126.6728
   },
   {
     "title": "영덕대게축제",
     "period": "2026. 3. 26. ~ 3. 29. | 10:00 ~ 18:00",
     "location": "경상북도 영덕군",
     "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773121479975.png",
-    "detail_url": "https://www.mcst.go.krfestivalView.jsp?pSeq=12129&pRo=9",
-    "lat": 36.5,
-    "lng": 127.5
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12129&pRo=9",
+    "lat": 36.576,
+    "lng": 128.5056
   },
   {
     "title": "낭만등불축제",
     "period": "2025. 3. 1. ~ 2026. 3. 31. | 09:30~20:00(연중무휴)",
     "location": "경기도 남양주시",
     "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1743556193783.jpg",
-    "detail_url": "https://www.mcst.go.krfestivalView.jsp?pSeq=12070&pRo=10",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12070&pRo=10",
     "lat": 37.4138,
     "lng": 127.5183
   },
@@ -94,7 +94,7 @@
     "period": "2026. 4. 4. ~ 4. 5. | 09:00~18:00",
     "location": "경기도 양평군",
     "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773121827387.jpg",
-    "detail_url": "https://www.mcst.go.krfestivalView.jsp?pSeq=13018&pRo=11",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=13018&pRo=11",
     "lat": 37.4138,
     "lng": 127.5183
   },
@@ -103,16 +103,16 @@
     "period": "2026. 4. 3. ~ 4. 5. | 10:00~22:00",
     "location": "전라북도",
     "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773806445413.jpg",
-    "detail_url": "https://www.mcst.go.krfestivalView.jsp?pSeq=12197&pRo=12",
-    "lat": 36.5,
-    "lng": 127.5
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12197&pRo=12",
+    "lat": 35.7197,
+    "lng": 127.1441
   },
   {
     "title": "이천백사 산수유꽃축제",
     "period": "2026. 4. 3. ~ 4. 5. | 10:00~17:00",
     "location": "경기도",
     "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773121658673.jpg",
-    "detail_url": "https://www.mcst.go.krfestivalView.jsp?pSeq=12183&pRo=13",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12183&pRo=13",
     "lat": 37.4138,
     "lng": 127.5183
   },
@@ -121,17 +121,179 @@
     "period": "2026. 3. 21. ~ 4. 5. | 10:00 ~ 18:00",
     "location": "충청남도 서천군",
     "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773121791817.jpg",
-    "detail_url": "https://www.mcst.go.krfestivalView.jsp?pSeq=12172&pRo=14",
-    "lat": 36.5,
-    "lng": 127.5
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12172&pRo=14",
+    "lat": 36.6588,
+    "lng": 126.6728
   },
   {
     "title": "서귀포유채꽃축제",
     "period": "2026. 4. 4. ~ 4. 5. | 10:00 ~ 20:00",
     "location": "제주도 서귀포시",
     "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773121625578.jpg",
-    "detail_url": "https://www.mcst.go.krfestivalView.jsp?pSeq=12168&pRo=15",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12168&pRo=15",
     "lat": 33.4996,
     "lng": 126.5312
+  },
+  {
+    "title": "고창 벚꽃축제",
+    "period": "2026. 4. 3. ~ 4. 5. | 10:00 ~ 22:00",
+    "location": "전라북도 고창군",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1741739081417.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12167&pRo=16",
+    "lat": 35.7197,
+    "lng": 127.1441
+  },
+  {
+    "title": "진해군항제",
+    "period": "2026. 3. 27. ~ 4. 5. | 00:00~22:00",
+    "location": "경상남도 창원시",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773121691886.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12156&pRo=17",
+    "lat": 35.2373,
+    "lng": 128.6922
+  },
+  {
+    "title": "옥천묘목축제",
+    "period": "2026. 4. 2. ~ 4. 5. | 10:00~21:00",
+    "location": "충청북도 옥천군",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773121976796.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12151&pRo=18",
+    "lat": 36.6356,
+    "lng": 127.4913
+  },
+  {
+    "title": "양평 갈산누리봄축제",
+    "period": "2026. 4. 10. ~ 4. 12. | 10:00~17:00",
+    "location": "경기도 양평군",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773806475957.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=13410&pRo=19",
+    "lat": 37.4138,
+    "lng": 127.5183
+  },
+  {
+    "title": "보배섬 유채꽃 축제",
+    "period": "2026. 4. 9. ~ 4. 12. | 10:00~16:30",
+    "location": "전라남도 진도군",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773706402644.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=13042&pRo=20",
+    "lat": 34.8679,
+    "lng": 126.991
+  },
+  {
+    "title": "보은 벚꽃길 축제",
+    "period": "2026. 4. 3. ~ 4. 12. | 10:00 ~ 21:00",
+    "location": "충청북도 보은군",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773806551223.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12184&pRo=21",
+    "lat": 36.6356,
+    "lng": 127.4913
+  },
+  {
+    "title": "기지시줄다리기 축제",
+    "period": "2026. 4. 9. ~ 4. 12. | 10:00~21:00",
+    "location": "충청남도 당진시",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1742431263403.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12175&pRo=22",
+    "lat": 36.6588,
+    "lng": 126.6728
+  },
+  {
+    "title": "영암왕인문화축제",
+    "period": "2026. 4. 4. ~ 4. 12. | (평일) 10:00~19:00 / (주말) 11:00~20:00",
+    "location": "전라남도 영암군",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773122040144.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12149&pRo=23",
+    "lat": 34.8679,
+    "lng": 126.991
+  },
+  {
+    "title": "대덕물빛축제",
+    "period": "2026. 4. 4. ~ 4. 18. | 11:00~22:00",
+    "location": "대전시 대덕구",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773619783764.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12189&pRo=24",
+    "lat": 36.3504,
+    "lng": 127.3845
+  },
+  {
+    "title": "부여 국가유산 야행",
+    "period": "2026. 4. 17. ~ 4. 19. | 18:30~22:30",
+    "location": "충청남도 부여군",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773706491562.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=13022&pRo=25",
+    "lat": 36.6588,
+    "lng": 126.6728
+  },
+  {
+    "title": "부여세도 방울토마토 & 유채꽃축제",
+    "period": "2026. 4. 17. ~ 4. 19. | 10:00 ~ 21:00",
+    "location": "충청남도 부여군",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773706450280.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12314&pRo=26",
+    "lat": 36.6588,
+    "lng": 126.6728
+  },
+  {
+    "title": "양주 회암사지 왕실축제",
+    "period": "2026. 4. 17. ~ 4. 19. | 10:00~20:00",
+    "location": "경기도 양주시",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1712622412435.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12281&pRo=27",
+    "lat": 37.4138,
+    "lng": 127.5183
+  },
+  {
+    "title": "의령 홍의장군 축제",
+    "period": "2026. 4. 16. ~ 4. 19. | 10:00~22:00",
+    "location": "경상남도 의령군",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773619844055.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12252&pRo=28",
+    "lat": 35.2373,
+    "lng": 128.6922
+  },
+  {
+    "title": "금산 보곡산골 산벚꽃 축제",
+    "period": "2026. 4. 11. ~ 4. 19. | 10:00~16:00",
+    "location": "충청남도 금산군",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773806580311.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12173&pRo=29",
+    "lat": 36.6588,
+    "lng": 126.6728
+  },
+  {
+    "title": "진도신비의바닷길축제",
+    "period": "2025. 4. 17. ~ 4. 20. | 10:00~21:00",
+    "location": "전라남도 진도군",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773706547699.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=13019&pRo=30",
+    "lat": 34.8679,
+    "lng": 126.991
+  },
+  {
+    "title": "홍성남당항 새조개축제",
+    "period": "2026. 1. 17. ~ 4. 30. | 9:00~24:00",
+    "location": "충청남도 홍성군",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1737677473754.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=12122&pRo=31",
+    "lat": 36.6588,
+    "lng": 126.6728
+  },
+  {
+    "title": "서울스프링페스티벌",
+    "period": "2026. 4. 10. ~ 5. 5. | 10:00~21:00",
+    "location": "서울시 송파구",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773122159738.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=13409&pRo=32",
+    "lat": 37.5665,
+    "lng": 126.978
+  },
+  {
+    "title": "덕수궁 밤의 석조전",
+    "period": "2026. 4. 8. ~ 5. 17. | 18:00~20:55(회차당 100분)",
+    "location": "서울시 중구",
+    "image_url": "https://www.mcst.go.kr/attachFiles/cultureInfoCourt/localFestival/notifyFestival/1773706665114.jpg",
+    "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=13038&pRo=33",
+    "lat": 37.5665,
+    "lng": 126.978
   }
 ]
