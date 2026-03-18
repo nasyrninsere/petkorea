@@ -8,7 +8,7 @@ import datetime
 
 # --- 1. 페이지 설정 ---
 st.set_page_config(
-    page_title="대한민국 축제",
+    page_title="대한민국 축제 Explorer",
     page_icon="🎉",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -110,7 +110,7 @@ st.markdown("""
 
 # --- 3. 데이터 로드 및 전처리 ---
 @st.cache_data
-def load_data():
+def load_data(mtime):
     if not os.path.exists('festivals.json'):
         # Fallback empty data or generate fallback if file not exists
         return pd.DataFrame()
@@ -149,7 +149,8 @@ def load_data():
     
     return df
 
-df = load_data()
+mtime = os.path.getmtime('festivals.json') if os.path.exists('festivals.json') else 0
+df = load_data(mtime)
 
 # --- 4. 에러 핸들링 ---
 if df.empty:
