@@ -295,5 +295,167 @@
     "detail_url": "https://www.mcst.go.kr/kor/s_culture/festival/festivalView.jsp?pSeq=13038&pRo=33",
     "lat": 37.5665,
     "lng": 126.978
+  },
+  {
+    "title": "화천 산천어축제",
+    "period": "2026. 1. 10. ~ 2. 1.",
+    "location": "강원도 화천군",
+    "lat": 38.1065,
+    "lng": 127.7081,
+    "image_url": "https://images.unsplash.com/photo-1610440042657-612c34d95e9f?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
+  },
+  {
+    "title": "태백산 눈축제",
+    "period": "2026. 1. 23. ~ 2. 1.",
+    "location": "강원도 태백시",
+    "lat": 37.1664,
+    "lng": 128.9856,
+    "image_url": "https://images.unsplash.com/photo-1549416878-b9ca95e79603?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
+  },
+  {
+    "title": "제주 들불축제",
+    "period": "2026. 3. 7. ~ 3. 9.",
+    "location": "제주도 제주시",
+    "lat": 33.4996,
+    "lng": 126.5312,
+    "image_url": "https://images.unsplash.com/photo-1533587837-a28395649774?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
+  },
+  {
+    "title": "진해 군항제",
+    "period": "2026. 3. 25. ~ 4. 3.",
+    "location": "경상남도 창원시",
+    "lat": 35.1475,
+    "lng": 128.6669,
+    "image_url": "https://images.unsplash.com/photo-1617112182061-0b5c1924f7ac?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
+  },
+  {
+    "title": "영종도 세계 음식축제",
+    "period": "2026. 5. 3. ~ 5. 5.",
+    "location": "인천시 중구",
+    "lat": 37.4912,
+    "lng": 126.4875,
+    "image_url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
+  },
+  {
+    "title": "춘천 마임축제",
+    "period": "2026. 5. 24. ~ 5. 31.",
+    "location": "강원도 춘천시",
+    "lat": 37.8813,
+    "lng": 127.7298,
+    "image_url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
+  },
+  {
+    "title": "해운대 모래축제",
+    "period": "2026. 5. 19. ~ 5. 22.",
+    "location": "부산시 해운대구",
+    "lat": 35.1587,
+    "lng": 129.1604,
+    "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
+  },
+  {
+    "title": "강릉 단오제",
+    "period": "2026. 6. 14. ~ 6. 21.",
+    "location": "강원도 강릉시",
+    "lat": 37.7519,
+    "lng": 128.8761,
+    "image_url": "https://images.unsplash.com/photo-1569437202168-a461c6b7ef9b?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
+  },
+  {
+    "title": "대구 치맥 페스티벌",
+    "period": "2026. 7. 1. ~ 7. 5.",
+    "location": "대구시 달서구",
+    "lat": 35.8451,
+    "lng": 128.5447,
+    "image_url": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
+  },
+  {
+    "title": "보령 머드축제",
+    "period": "2026. 7. 17. ~ 7. 26.",
+    "location": "충청남도 보령시",
+    "lat": 36.3333,
+    "lng": 126.6,
+    "image_url": "https://images.unsplash.com/photo-1601758174114-e711c0cbe6df?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
+  },
+  {
+    "title": "정남진 장흥 물축제",
+    "period": "2026. 7. 25. ~ 8. 2.",
+    "location": "전라남도 장흥군",
+    "lat": 34.6811,
+    "lng": 126.9075,
+    "image_url": "https://images.unsplash.com/photo-1519741497674-611481863552?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
+  },
+  {
+    "title": "여수 거북선축제",
+    "period": "2026. 8. 14. ~ 8. 16.",
+    "location": "전라남도 여수시",
+    "lat": 34.7604,
+    "lng": 127.6622,
+    "image_url": "https://images.unsplash.com/photo-1599583492716-e8e0fc6e7c10?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
+  },
+  {
+    "title": "안동 국제탈춤페스티벌",
+    "period": "2026. 9. 25. ~ 10. 4.",
+    "location": "경상북도 안동시",
+    "lat": 36.5684,
+    "lng": 128.7294,
+    "image_url": "https://images.unsplash.com/photo-1578922756046-34007ec0c27b?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
+  },
+  {
+    "title": "수원 화성문화제",
+    "period": "2026. 10. 8. ~ 10. 11.",
+    "location": "경기도 수원시",
+    "lat": 37.2636,
+    "lng": 127.0286,
+    "image_url": "https://images.unsplash.com/photo-1540959733332-e94e2708f08a?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
+  },
+  {
+    "title": "부산 국제영화제",
+    "period": "2026. 10. 14. ~ 10. 23.",
+    "location": "부산시 해운대구",
+    "lat": 35.1587,
+    "lng": 129.1604,
+    "image_url": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
+  },
+  {
+    "title": "진주 남강유등축제",
+    "period": "2026. 10. 1. ~ 10. 15.",
+    "location": "경상남도 진주시",
+    "lat": 35.1802,
+    "lng": 128.1076,
+    "image_url": "https://images.unsplash.com/photo-1496116278089-390069ec7ea7?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
+  },
+  {
+    "title": "청도 프로방스 빛축제",
+    "period": "2026. 11. 1. ~ 12. 31.",
+    "location": "경상북도 청도군",
+    "lat": 35.6475,
+    "lng": 128.7336,
+    "image_url": "https://images.unsplash.com/photo-1511268559489-34b624fbfcf5?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
+  },
+  {
+    "title": "서울 빛초롱 축제",
+    "period": "2026. 12. 15. ~ 12. 31.",
+    "location": "서울시 종로구",
+    "lat": 37.5665,
+    "lng": 126.978,
+    "image_url": "https://images.unsplash.com/photo-1576675784432-994941412b3d?w=400",
+    "detail_url": "https://korean.visitkorea.or.kr/main/main.do"
   }
 ]
