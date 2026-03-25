@@ -193,6 +193,35 @@ if df.empty:
     st.error("데이터를 불러오지 못했습니다. `data_collector.py`를 실행하여 데이터를 먼저 수집해주세요.")
     st.stop()
 
+# --- 4-1. 공통 로직 ---
+def render_festival_cards(items_df, num_cols=2):
+    if items_df.empty:
+        st.write("표시할 축제 정보가 없습니다.")
+        return
+    
+    items = items_df.to_dict('records')
+    for i in range(0, len(items), num_cols):
+        cols = st.columns(num_cols)
+        for j in range(num_cols):
+            if i + j < len(items):
+                item = items[i+j]
+                with cols[j]:
+                    img_src = item['image_url'] if item.get('image_url') else "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=400&q=80"
+                    st.markdown(f"""
+                    <div class="festival-card">
+                        <img class="card-img" src="{img_src}" onerror="this.src='https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=400&q=80'">
+                        <div class="card-content">
+                            <div class="card-title">{item['title']}</div>
+                            <div class="card-info">📍 {item['location']}</div>
+                            <div class="card-info">📅 {item['period']}</div>
+                            <div style="display: flex; gap: 8px; margin-top: 12px;">
+                                <a class="detail-btn" href="{item.get('detail_url', '#')}" target="_blank" style="margin-top:0; flex:1;">🔎 상세</a>
+                                <a class="detail-btn" href="https://map.kakao.com/link/search/{item['title']}" target="_blank" style="margin-top:0; flex:1; background: linear-gradient(135deg, #F9DC02, #E5C300); color: #3C1E1E;">🚗 길찾기</a>
+                            </div>
+                        </div>
+                    </div>
+                    """, unsafe_allow_html=True)
+
 # --- 5. 사이드바 (필터 컨트롤) ---
 st.sidebar.image("https://images.unsplash.com/photo-1540959733332-e94e2708f08a?auto=format&fit=crop&w=300&q=80", use_column_width=True)
 st.sidebar.markdown("### 🔍 축제 필터")
@@ -217,6 +246,13 @@ if selected_month != '전체':
 if search_query:
     filtered_df = filtered_df[filtered_df['title'].str.contains(search_query, case=False)]
 
+st.sidebar.markdown("---")
+if mtime > 0:
+    last_updated = datetime.datetime.fromtimestamp(mtime).strftime('%Y-%m-%d %H:%M')
+    st.sidebar.caption(f"🔄 데이터 업데이트: {last_updated}")
+else:
+    st.sidebar.caption("🔄 데이터 업데이트: 정보 없음")
+
 # --- 6. 메인 헤더 ---
 st.title("🇰🇷 대한민국 축제 탐색기 & 분석")
 st.markdown("정부부처 및 지자체 공식 정보 기반 제공")
@@ -236,6 +272,35 @@ with m_col3:
         st.metric(label="🏆 최다 개최 지역", value=top_sido)
     else:
         st.metric(label="🏆 최다 개최 지역", value="-")
+
+st.markdown("---")
+
+# --- 7-1. 테마별 추천 스페이스 ---
+st.subheader("💡 MD 추천 테마 축제")
+theme_tabs = st.tabs(["🌸 이번 달 핫스타 축제", "👨‍👩‍👧‍👦 가족 추천 축제", "🌃 화려한 빛/야경 축제"])
+
+with theme_tabs[0]:
+    this_month_df = df[df['month'] == datetime.datetime.now().month]
+    if not this_month_df.empty:
+        render_festival_cards(this_month_df.sample(min(3, len(this_month_df))), num_cols=3)
+    else:
+        st.write("이번 달 예정된 축제가 없습니다.")
+
+with theme_tabs[1]:
+    family_keywords = ['가족', '공원', '어린이', '생태', '체험', '자연']
+    family_df = df[df['title'].str.contains('|'.join(family_keywords)) | df['location'].str.contains('공원')]
+    if not family_df.empty:
+        render_festival_cards(family_df.sample(min(3, len(family_df))), num_cols=3)
+    else:
+        render_festival_cards(df.sample(min(3, len(df))), num_cols=3) # Fallback
+
+with theme_tabs[2]:
+    light_keywords = ['빛', '야경', '불꽃', '유등', '루미나리에', '별빛']
+    light_df = df[df['title'].str.contains('|'.join(light_keywords))]
+    if not light_df.empty:
+        render_festival_cards(light_df.sample(min(3, len(light_df))), num_cols=3)
+    else:
+        st.write("관련 축제 정보가 없습니다.")
 
 st.markdown("---")
 
@@ -306,53 +371,7 @@ with body_col2:
     container = st.container(height=500)
     
     with container:
-        if filtered_df.empty:
-            st.write("표시할 축제 정보가 없습니다.")
-        else:
-            # 2열로 카드 배치용 컬럼 생성
-            items = filtered_df.to_dict('records')
-            for i in range(0, len(items), 2):
-                col_c1, col_c2 = st.columns(2)
-                
-                with col_c1:
-                    item = items[i]
-                    # 이미지 결측 처리
-                    img_src = item['image_url'] if item['image_url'] else "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=400&q=80"
-                    
-                    st.markdown(f"""
-                    <div class="festival-card">
-                        <img class="card-img" src="{img_src}" onerror="this.src='https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=400&q=80'">
-                        <div class="card-content">
-                            <div class="card-title">{item['title']}</div>
-                            <div class="card-info">📍 {item['location']}</div>
-                            <div class="card-info">📅 {item['period']}</div>
-                            <div style="display: flex; gap: 8px; margin-top: 12px;">
-                                <a class="detail-btn" href="{item['detail_url']}" target="_blank" style="margin-top:0; flex:1;">🔎 상세</a>
-                                <a class="detail-btn" href="https://map.kakao.com/link/search/{item['title']}" target="_blank" style="margin-top:0; flex:1; background: linear-gradient(135deg, #F9DC02, #E5C300); color: #3C1E1E;">🚗 길찾기</a>
-                            </div>
-                        </div>
-                    </div>
-                    """, unsafe_allow_html=True)
-                    
-                if i + 1 < len(items):
-                    with col_c2:
-                        item = items[i+1]
-                        img_src = item['image_url'] if item['image_url'] else "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=400&q=80"
-                        
-                        st.markdown(f"""
-                        <div class="festival-card">
-                            <img class="card-img" src="{img_src}" onerror="this.src='https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=400&q=80'">
-                            <div class="card-content">
-                                <div class="card-title">{item['title']}</div>
-                                <div class="card-info">📍 {item['location']}</div>
-                                <div class="card-info">📅 {item['period']}</div>
-                                <div style="display: flex; gap: 8px; margin-top: 12px;">
-                                    <a class="detail-btn" href="{item['detail_url']}" target="_blank" style="margin-top:0; flex:1;">🔎 상세</a>
-                                    <a class="detail-btn" href="https://map.kakao.com/link/search/{item['title']}" target="_blank" style="margin-top:0; flex:1; background: linear-gradient(135deg, #F9DC02, #E5C300); color: #3C1E1E;">🚗 길찾기</a>
-                                </div>
-                            </div>
-                        </div>
-                        """, unsafe_allow_html=True)
+        render_festival_cards(filtered_df, num_cols=2)
 
 st.markdown("---")
 
