@@ -147,6 +147,42 @@ def load_data(mtime):
     df['month'] = df['period'].apply(extract_month)
     df['month_str'] = df['month'].astype(str) + "월"
     
+    # 3. 달력(타임라인) 시각화를 위한 기간 파싱
+    def parse_dates(row):
+        try:
+            period = row['period']
+            parts = period.split('~')
+            start_part = parts[0].strip()
+            end_part = parts[1].strip() if len(parts) > 1 else start_part
+            
+            # 연도 추출 (보통 2026.)
+            year = start_part.split('.')[0].strip()
+            if not year.isdigit():
+                year = "2026" # 예비값
+            
+            # 시작일
+            start_m_d = start_part.replace(f"{year}.", "").strip()
+            s_m = start_m_d.split('.')[0].strip()
+            s_d = start_m_d.split('.')[1].strip()
+            start_dt = pd.to_datetime(f"{year}-{s_m}-{s_d}")
+            
+            # 종료일
+            if year in end_part:
+                end_m_d = end_part.replace(f"{year}.", "").strip()
+            else:
+                end_m_d = end_part.strip()
+            e_m = end_m_d.split('.')[0].strip()
+            e_d = end_m_d.split('.')[1].strip()
+            end_dt = pd.to_datetime(f"{year}-{e_m}-{e_d}")
+            
+            return pd.Series([start_dt, end_dt])
+        except:
+            m = row['month']
+            # 파싱 실패 시 해당 월 1일 ~ 7일로 임시 설정
+            return pd.Series([pd.to_datetime(f"2026-{m}-01"), pd.to_datetime(f"2026-{m}-07")])
+            
+    df[['start_date', 'end_date']] = df.apply(parse_dates, axis=1)
+    
     return df
 
 mtime = os.path.getmtime('festivals.json') if os.path.exists('festivals.json') else 0
@@ -290,7 +326,10 @@ with body_col2:
                             <div class="card-title">{item['title']}</div>
                             <div class="card-info">📍 {item['location']}</div>
                             <div class="card-info">📅 {item['period']}</div>
-                            <a class="detail-btn" href="{item['detail_url']}" target="_blank">🔎 상세 정보</a>
+                            <div style="display: flex; gap: 8px; margin-top: 12px;">
+                                <a class="detail-btn" href="{item['detail_url']}" target="_blank" style="margin-top:0; flex:1;">🔎 상세</a>
+                                <a class="detail-btn" href="https://map.kakao.com/link/search/{item['title']}" target="_blank" style="margin-top:0; flex:1; background: linear-gradient(135deg, #F9DC02, #E5C300); color: #3C1E1E;">🚗 길찾기</a>
+                            </div>
                         </div>
                     </div>
                     """, unsafe_allow_html=True)
@@ -307,7 +346,10 @@ with body_col2:
                                 <div class="card-title">{item['title']}</div>
                                 <div class="card-info">📍 {item['location']}</div>
                                 <div class="card-info">📅 {item['period']}</div>
-                                <a class="detail-btn" href="{item['detail_url']}" target="_blank">🔎 상세 정보</a>
+                                <div style="display: flex; gap: 8px; margin-top: 12px;">
+                                    <a class="detail-btn" href="{item['detail_url']}" target="_blank" style="margin-top:0; flex:1;">🔎 상세</a>
+                                    <a class="detail-btn" href="https://map.kakao.com/link/search/{item['title']}" target="_blank" style="margin-top:0; flex:1; background: linear-gradient(135deg, #F9DC02, #E5C300); color: #3C1E1E;">🚗 길찾기</a>
+                                </div>
                             </div>
                         </div>
                         """, unsafe_allow_html=True)
@@ -350,3 +392,35 @@ with chart_col2:
         fig_line.update_traces(line_color='#8B5CF6', marker=dict(size=8, color='#EC4899'))
         fig_line.update_layout(plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)", font={'color': '#1E293B'})
         st.plotly_chart(fig_line, use_column_width=True)
+
+st.markdown("---")
+
+# --- 10. 축제 타임라인 (캘린더) 일정표 ---
+st.subheader("🗓️ 축제 타임라인 일정표 (캘린더 뷰)")
+
+if not filtered_df.empty:
+    # 날짜 순 정렬
+    df_timeline = filtered_df.sort_values('start_date')
+    
+    fig_gantt = px.timeline(
+        df_timeline, 
+        x_start="start_date", 
+        x_end="end_date", 
+        y="title", 
+        color="sido",
+        title="📌 축제 기간 타임라인",
+        labels={'title': '축제 명칭', 'sido': '지역'},
+    )
+    
+    # 레이아웃 꾸미기
+    fig_gantt.update_yaxes(autorange="reversed") # 위쪽이 더 이른 일정
+    fig_gantt.update_layout(
+        plot_bgcolor="rgba(0,0,0,0)", 
+        paper_bgcolor="rgba(0,0,0,0)", 
+        font={'color': '#1E293B'},
+        height=max(400, len(df_timeline) * 25), # 데이터 많으면 높이 조절
+        showlegend=True
+    )
+    st.plotly_chart(fig_gantt, use_column_width=True)
+else:
+    st.info("조건에 부합하는 축제가 없어 타임라인을 표시할 수 없습니다.")
